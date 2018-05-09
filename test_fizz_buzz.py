@@ -34,6 +34,11 @@ class TestFizzBuzz(unittest.TestCase):
         expected = "Buzz"
         self.assertEqual(actual, expected)
 
+    def test_fizzBuzz_divisible_by_and_contains_5(self):
+        actual = fizz_buzz(50)
+        expected = "Buzz"
+        self.assertEqual(actual, expected)
+
     def test_fizzBuzz_not_divisible_contain_3_or_5(self):
         actual = fizz_buzz(14)
         expected = 14
