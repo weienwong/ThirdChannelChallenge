@@ -1,8 +1,8 @@
-from unittest import TestCase
-from FizzBuzz import fizz_buzz, main
+import unittest
+from fizz_buzz import fizz_buzz
 
 
-class TestFizzBuzz(TestCase):
+class TestFizzBuzz(unittest.TestCase):
 
     def test_fizzBuzz_divisible_by_3(self):
         actual = fizz_buzz(6)
@@ -39,5 +39,5 @@ class TestFizzBuzz(TestCase):
         expected = 14
         self.assertEqual(actual, expected)
 
-        main()
-
+if __name__ == '__main__':
+    unittest.main()

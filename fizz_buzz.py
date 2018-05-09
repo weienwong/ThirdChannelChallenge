@@ -13,7 +13,7 @@ def fizz_buzz(num):
 
 def main():
     for n in range(1,100):
-        print fizz_buzz(n)
+        print(fizz_buzz(n))
 
 if __name__ == "__main__":
     main()
